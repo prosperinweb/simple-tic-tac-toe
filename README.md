@@ -41,6 +41,11 @@ NOTE: The input coordinates start at 1 but are adjusted to correspond with prope
 - [ ] add custom game such as best of 3 or 5
 - [ ] Add single player mode with AI
 
+## Considerations
+- This project was created using Java 17 and its corresponding features such as
+  - text-blocks
+
+
 ## Acknowledgements
 
 - I would like to thank Jetbrains Academy for being such an amazing learning platform.

@@ -8,22 +8,13 @@ public class Game {
 
     private final Analyzer analyzer = new Analyzer(BOARD);
     private final Scanner scanner = new Scanner(System.in);
-    private static final String BOARD_FORMAT = "" +
-            "---------\n" +
-            "| %s %s %s |\n" +
-            "| %s %s %s |\n" +
-            "| %s %s %s |\n" +
-            "---------";
+    private static final String BOARD_FORMAT = """
+            ---------
+            | %s %s %s |
+            | %s %s %s |
+            | %s %s %s |
+            ---------""";
 
-    /* TODO
-        - Commands method so user chooses whether to start from scratch or enter existing game state
-        - choose which player goes first
-        - redo ability
-        - replay ability
-        - add history
-        - add custom game such as
-            - best of 3 / 5
-    */
     public void init() {
         setDefaultBoard();
         printBoard();
@@ -37,6 +28,7 @@ public class Game {
             }
         }
     }
+    // Note: To be implemented
     public void enterExistingState() {
         System.out.println("Enter cells:");
         try {
@@ -103,6 +95,7 @@ public class Game {
         );
     }
 
+    // Note: To be implemented
     public void printGameState() {
         printBoard();
         analyzer.printStateResult();
